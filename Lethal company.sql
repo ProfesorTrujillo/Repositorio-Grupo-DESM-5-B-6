@@ -31,4 +31,23 @@ SELECT EXISTS (
     FROM Pacientes
     WHERE nombre = 'NOMBRE_A_BUSCAR'
     LIMIT 1
+
 ) AS Existe;
+
+
+
+
+
+EJEMPLO USANDO PROCEDIMIENTOS.
+DELIMITER $$
+CREATE PROCEDURE sp_BuscarPacientePorNombre(
+  IN p_nombre VARCHAR(50)
+)
+BEGIN
+  IF EXISTS (SELECT 1 FROM Pacientes WHERE nombre = p_nombre) THEN
+    SELECT * FROM Pacientes WHERE nombre = p_nombre;
+  ELSE
+    SELECT CONCAT('No existe paciente con el nombre: ', p_nombre) AS mensaje;
+  END IF;
+END $$
+DELIMITER 

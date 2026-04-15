@@ -1,0 +1,7 @@
+-- Estrategia de Fragmentación:
+-- Fragmentación Vertical: Separar la tabla 'auditoria_usuarios' en un esquema de logs 
+-- para optimizar el rendimiento del esquema transaccional principal.
+
+-- Estrategia de Replicación:
+-- Configuración Master-Slave para que las consultas de la vista 'v_tickets_pendientes' 
+-- se realicen en el nodo esclavo, reduciendo carga al nodo maestro.

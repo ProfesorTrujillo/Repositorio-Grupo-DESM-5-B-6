@@ -1,0 +1,6 @@
+START TRANSACTION;
+
+INSERT INTO ventas(id_cliente,fecha,total)
+VALUES(1,CURDATE(),200);
+
+COMMIT;

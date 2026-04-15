@@ -1,0 +1,10 @@
+DELIMITER //
+
+CREATE FUNCTION calcular_total(precio DECIMAL(10,2), cantidad INT)
+RETURNS DECIMAL(10,2)
+DETERMINISTIC
+BEGIN
+RETURN precio * cantidad;
+END //
+
+DELIMITER ;

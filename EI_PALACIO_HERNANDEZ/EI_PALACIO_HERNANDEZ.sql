@@ -1,6 +1,6 @@
 -- ==========================================================
--- EXAMEN PRÁCTICO: BASES DE DATOS RELACIONALES
--- ALUMNO: Luis Palacio
+-- EXAMEN PRÁCTICO: BASES DE DATOS AVANZADAS
+-- ALUMNO: Luis Angel Palacio Hernandez
 -- CARRERA: Desarrollo de Software Multiplataforma
 -- ==========================================================
 
